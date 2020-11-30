@@ -10,9 +10,9 @@ script:
 
 after_success:
   - docker build -t jamesbrunke/multi-client ./client
-  - docker build -t james brunke/multi-nginx ./nginx
-  - docker build -t james brunke/multi-server ./server
-  - docker build -t james brunke/multi-worker ./worker
+  - docker build -t jamesbrunke/multi-nginx ./nginx
+  - docker build -t jamesbrunke/multi-server ./server
+  - docker build -t jamesbrunke/multi-worker ./worker
   #Login to docker hub
   - echo "$DOCKER_PASSWORD"| docker login -u "$DOCKER_ID" --password-stdin
   #take these images and push to dockerhub
