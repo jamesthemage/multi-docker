@@ -18,5 +18,5 @@ after_success:
   #take these images and push to dockerhub
   - docker push jamesbrunke/multi-client
   - docker push jamesbrunke/multi-server
-  - docker push jamesbrunke/multi-server
+  - docker push jamesbrunke/multi-worker
   - docker push jamesbrunke/multi-nginx
